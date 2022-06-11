@@ -54,11 +54,7 @@ $(function () {
       url: '/api/login',
       data: $(this).serialize(),
       success: (res) => {
-<<<<<<< HEAD
           console.log(res);
-=======
-        console.log(res);
->>>>>>> index
         if (res.status !== 0) {
           return layer.msg('登陆失败');
         }
@@ -66,11 +62,7 @@ $(function () {
         //1.要把token 存在本地
         localStorage.setItem('token', res.token);
         //2.跳转到首页
-<<<<<<< HEAD
-        //location.href = '/index.html';
-=======
         location.href = '/index.html';
->>>>>>> index
       },
     });
   });
