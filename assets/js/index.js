@@ -61,3 +61,8 @@ $('#btnExit').click(() => {
 
 //获取用户列表
 getUserInfo();
+
+//发布文章后跳转到文章列表时切换高亮
+function change() {
+  $('#change').addClass('layui-this').next().removeClass('layui-this');
+}
